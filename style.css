@@ -675,4 +675,57 @@ body {
     .contact-logo img {
         width: 54px;
     }
+
+}
+
+/* =====================================
+   FORCE DESKTOP VIEW (NO RESPONSIVE)
+   ===================================== */
+
+/* Paksa lebar minimum seperti desktop */
+html, body {
+    min-width: 1200px;
+    overflow-x: auto;
+}
+
+/* Matikan semua efek responsive dari media query */
+@media (max-width: 99999px) {
+
+    .nav-menu {
+        position: static !important;
+        height: auto !important;
+        width: auto !important;
+        flex-direction: row !important;
+        background: transparent !important;
+        padding: 0 !important;
+        right: 0 !important;
+    }
+
+    .nav-toggle {
+        display: none !important;
+    }
+
+    .business-wrapper {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .vm-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .portfolio-wrap {
+        flex-direction: row !important;
+    }
+
+    .software-logo-grid {
+        grid-template-columns: repeat(7, 1fr) !important;
+    }
+
+    .ict-logo-grid {
+        grid-template-columns: repeat(9, 1fr) !important;
+    }
+
+    .partner-logo-grid {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
 }
